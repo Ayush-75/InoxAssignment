@@ -2,9 +2,9 @@
 ---
 ## 📸 Screenshots
 
-| Home Screen | Cart Drawer | Order Success |
-| :---: | :---: | :---: |
-| <img src="screenshots/screen1.png" width="250"> | <img src="screenshots/screen2.jpeg" width="250"> | <img src="screenshots/screen3.png" width="250"> | <img src="screenshots/screen4.png" width="250">
+| Screen | Screen2 | Screen3 | Screen4 |
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/screen1.png" width="250"> | <img src="screenshots/screen2.png" width="250"> | <img src="screenshots/screen3.png" width="250"> | <img src="screenshots/screen4.png" width="250"> |
 
 ---
 
