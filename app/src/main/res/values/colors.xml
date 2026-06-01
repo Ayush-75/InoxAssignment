@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="brand_pink">#E41B49</color>
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#888888</color>
+
+    <color name="bg_main">#F8F9FA</color>
+    <color name="card_stroke">#E0E0E0</color>
+
+
+    <color name="filter_inactive_bg">#FFFFFF</color>
+    <color name="filter_inactive_stroke">#E0E0E0</color>
+    <color name="filter_inactive_text">#757575</color>
+
+    <color name="veg_active_bg">#E8F5E9</color>
+    <color name="veg_active_stroke">#4CAF50</color>
+    <color name="veg_active_text">#2E7D32</color>
+
+    <color name="nonveg_active_bg">#FFEBEE</color>
+    <color name="nonveg_active_stroke">#EF5350</color>
+    <color name="nonveg_active_text">#C62828</color>
+
+</resources>

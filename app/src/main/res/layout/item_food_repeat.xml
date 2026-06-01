@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="6dp"
+    android:layout_marginBottom="8dp"
+    android:backgroundTint="@color/white"
+    android:minHeight="100dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    app:strokeColor="@color/card_stroke"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivRepeatFood"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_margin="7dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_white_rounded"
+            android:scaleType="centerCrop"
+            android:src="@drawable/m3_split_button_chevron_avd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.063" />
+
+        <ImageView
+            android:id="@+id/ivTypeIcon"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="4dp"
+            android:elevation="2dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_veg"
+            app:layout_constraintStart_toStartOf="@id/ivRepeatFood"
+            app:layout_constraintTop_toTopOf="@id/ivRepeatFood" />
+
+        <TextView
+            android:id="@+id/tvRepeatName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minLines="1"
+            android:text="Salted Popcorn"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/priceRow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivRepeatFood"
+            app:layout_constraintTop_toTopOf="@id/ivRepeatFood" />
+
+        <LinearLayout
+            android:id="@+id/priceRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/tvRepeatName"
+            app:layout_constraintEnd_toEndOf="@id/tvRepeatName"
+            app:layout_constraintTop_toBottomOf="@id/tvRepeatName">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹150"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvPriceNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:text="Customisable"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAdd"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="85dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:textStyle="bold"
+            android:text="ADD"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            app:cornerRadius="6dp"
+            app:layout_constraintStart_toStartOf="@id/priceRow"
+            app:layout_constraintTop_toBottomOf="@id/priceRow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:strokeColor="#DCA100" />
+
+        <LinearLayout
+            android:id="@+id/llCounter"
+            android:layout_width="85dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_counter_yellow"
+            android:gravity="center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/priceRow"
+            app:layout_constraintTop_toBottomOf="@id/priceRow">
+
+            <ImageButton
+                android:id="@+id/btnMinus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:src="@drawable/ic_remove"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnPlus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:src="@drawable/ic_add"
+                app:tint="@color/black" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
